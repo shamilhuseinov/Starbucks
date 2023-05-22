@@ -1,0 +1,301 @@
+@font-face {
+    font-family: poppins;
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+  }
+body{
+    margin: 0;
+    padding: 0;
+}
+.accordion-body{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    p{
+        color: gray;
+    }
+
+    p:hover{
+        color: black;
+    }
+}
+.icons{
+    position: relative;
+    left: 20px;
+    top: 35px;
+    font-size: 30px;
+    display: flex;
+    gap: 15px;
+}
+.after-icons{
+    display: flex;
+    position: relative;
+    font-family: poppins, sans-serif;
+    p:hover{
+        text-decoration: underline;
+    }
+}
+.last-sentence{
+    position: relative;
+    top: 75px;
+    left: 20px;
+    p{
+        color: gray;
+        font-family: poppins, sans-serif;
+        font-size: 13px;
+    }
+    div{
+        height: 30px;
+    }
+}
+.first-texts{
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+.body{
+    font-family: poppins, sans-serif;
+    height: 1250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 0.5px solid lightgray;
+    .first-texts{
+        position: relative;
+        top: 20px;
+        width: 500px;
+        .create-account{
+            font-weight: bold;
+            font-size: 23px;
+        }
+        .starbucks-rewards{
+            display: none;
+        }
+        .long-text{
+            color: gray;
+            font-size: 12px;
+            a{
+                text-decoration: underline;
+            }
+            a:hover{
+                text-decoration: none;
+            }
+        }
+    }
+    .base-part{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        width: 480px;
+        height: 1100px;
+        position: relative;
+        .required{
+            font-size: 13px;
+            position: relative;
+            top: 10px;
+        }
+        .label{
+            font-weight: 500;
+            font-size: 15px;
+        }
+        .input{
+            width: 100%;
+            height: 47px;
+            border-radius: 10px;
+            border: 1px solid gray;
+        }
+        .afterinput{
+            font-size: 13px;
+            position: relative;
+            bottom: 15px;
+        }
+        .collect-stars{
+            color: gray;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        .email-great{
+            font-size: 14px;
+        }
+        .checkbox-container{
+            display: flex;
+            gap: 10px;
+            input{
+                width: 25px;
+                height: 25px;
+                border-radius: 25px;
+            }
+            p{
+                font-size: 13px;
+                a{
+                    text-decoration: underline;
+                    color: darkgreen;
+                }
+                a:hover{
+                    text-decoration: none;
+                }
+            }
+        }
+        .initiatives{
+            color: gray;
+            font-size: 13px;
+            position: relative;
+            left: 35px;
+            bottom: 15px;
+        }
+        .terms-of-use{
+            color: grey;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        button{
+            border-color: transparent;
+            border-radius: 25px;
+            color: white;
+            background-color: darkgreen;
+            font-size: 17px;
+            height: 55px;
+            width: 170px;
+            position: relative;
+            left: 285px;
+        }
+        ::placeholder{
+            color: black;
+            position: relative;
+            left: 10px;
+            font-size: 14px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    header{
+        height: 70px;
+        border-bottom: 1px solid lightgray;
+        display: flex;
+        align-items: center;
+    } 
+    .first-green-icon-img{
+        position: relative;
+        left: 20px;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+    }    
+    .after-icons{
+        flex-direction: column;
+        font-size: 14px;
+        top: 65px;
+        left: 20px;
+        gap: 12px;
+    }
+}
+@media screen and (min-width: 769px){
+    .first-green-icon-img{
+        position: relative;
+        height: 50px;
+        width: 50px;
+        left: 20px;
+    }
+    header{
+        height: 90px;
+        border-bottom: 1px solid lightgray;
+        display: flex;
+        align-items: center;
+    }
+    .accordion{
+        button{
+            font-size: 20px;
+            position: relative;
+        }
+        font-size: 17px;
+    }
+    .after-icons{
+        font-size: 16px;
+        gap: 20px;
+        top: 65px;
+        left: 20px;
+        p{
+            border-right:2px solid black;
+            padding-right:18px;
+        }
+
+        #last-p{
+            border-color: transparent;
+        }
+    }
+    .body{
+        height: 1590px;
+        .first-texts{
+            position: relative;
+            top: 40px;
+            width: 500px;
+            text-align: center;
+            .create-account{
+                font-size: 27px;
+            }
+            .starbucks-rewards{
+                position: relative;
+                top: 25px;
+                display: block;
+                color: gray;
+                font-weight: 600;
+                font-size: 15px;
+            }
+            .long-text{
+                position: relative;
+                top: 25px;
+                font-size: 14px;
+            }
+        }
+        .base-part{
+            height: 1250px;
+            justify-content: space-evenly;
+            padding-top: 35px;
+            padding-bottom: 40px;
+            border: 0.9px solid lightgray;
+            top: 100px;
+            border-radius: 12px;
+            width: 600px;
+            padding-left: 80px;
+            padding-right: 80px;
+            .required{
+                font-size: 16px;
+            }
+            .label{
+                font-size: 18px;
+            }
+            .input{
+                height: 50px;
+            }
+            .afterinput{
+                font-size: 15px;
+                position: relative;
+                left: 17px;
+            }
+            .collect-stars{
+                font-size: 15px;
+            }
+            .email-great{
+                font-size: 15px;
+            }
+            .checkbox-container{
+                p{
+                    font-size: 15px;
+                }
+            }
+            .initiatives{
+                font-size: 15px;
+            }
+            .terms-of-use{
+                font-size: 15px;
+            }
+            button{
+
+            }
+            ::placeholder{
+                font-size: 18px;
+            }
+        }
+    }
+}

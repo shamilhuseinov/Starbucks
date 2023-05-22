@@ -1,0 +1,390 @@
+@font-face {
+    font-family: poppins;
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+  }
+body{
+    margin: 0;
+    padding: 0;
+}
+.hovergreenLocation:hover{
+    color: green;
+}
+header nav{
+    display: none;
+}
+.first-green-icon-img{
+    position: relative;
+    left: 20px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.header-bar{
+    box-sizing: border-box;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+#header-button-sign-in{
+    border: 1px solid black;
+    border-radius: 25px;
+    height: 35px;
+    width: 90px;
+    font-weight: bold;
+    background-color: transparent;
+    position: relative;
+    font-size: 16px;
+    top: 14px;
+}
+#header-button-join-now{
+    border: 1px solid black;
+    border-radius: 25px;
+    height: 35px;
+    width: 90px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    position: relative;
+    top: 14px;
+    font-size: 16px;
+}
+#header-button-find-a-store{
+    border-color: transparent;
+    background-color: transparent;
+    font-size: 20px;
+    position: relative;
+    top: 16px;
+    padding-bottom: 24px;
+    border-bottom: 7px solid green;
+}
+.header-lists-desktop{
+    display: none;
+    font-weight: bold;
+    display: flex;
+    gap: 25px;
+}
+.header-buttons-desktop{
+    display: none;
+}
+.menu {
+    display: none;
+    min-width: 450px;
+    height: 100vh;
+  }
+hr{
+    display: none;
+}
+.mapmobile{
+    display: none;
+}
+.mapdesktop{
+    display: none;
+}
+
+
+@media screen and (max-width: 768px){
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .location-link-class span{
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .location-link-class{
+        text-decoration: none;
+    }
+    .location-2-header{
+        display: flex;
+        gap: 10px;
+    }
+    hr{
+        color: lightgray;
+        min-width: 367px;
+        display: block;
+    }
+    .header-buttons{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        position: relative;
+        top: 20px;
+        left: 30px;
+    }
+    .hamburger {
+        position: relative;
+        right: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+        margin: 10px;
+      }   
+      .bar {
+        width: 30px;
+        height: 3px;
+        background-color: gray;
+        margin: 2px 0;
+        border-radius: 5px;
+      }
+      .menu.active {
+        display: block;
+      }   
+      .menu ul {
+        list-style: none;
+        padding: 0;
+      }
+      .menu ul li {
+        margin-bottom: 10px;
+        position: relative;
+        left: 40px;
+      }
+      .menu ul li a {
+        text-decoration: none;
+        color: #000;
+        font-size: 20px;
+      }
+      .header-lists{
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+      }
+      .header-lists-desktop{
+        display: none;
+      }
+      .hovercolorgray:hover{
+        background-color: gray;
+    }
+    .mapmobile{
+        display: block;
+    }
+    .before-map{
+        display: flex;
+        justify-content: space-between;
+        height: 60px;
+        align-items: center;
+        .input-and-icon{
+            display: flex;
+            flex-direction: column;
+            .input-and-iconn{
+                input{     
+                    z-index: 2;  
+                    position: relative;
+                    top: 2px; 
+                    left: 20px;
+                    width: auto;
+                    height: 20px;
+                    border-color: transparent;
+                }
+                input:focus {
+                    outline-color: transparent;
+                }
+                .icon{
+                    position: relative;
+                    left: 340px;
+                    font-size: 18px;
+                    color: gray;
+                }
+            }
+            .line{
+                z-index: 10;
+                min-width: 500px;
+                height: 1px;
+                background-color: black;
+                position: relative;
+                left: 20px;
+            }
+            ::placeholder{
+                font-size: 17px;
+            }
+        }
+        .filter-button{
+            color: darkgreen;
+            border: 1px solid darkgreen;
+            background-color: white;
+            border-radius: 25px;
+            height: 35px;
+            width: 70px;
+            font-size: 15px;
+            font-weight: 600;
+            position: relative;
+            right: 20px;
+        }
+        .filter-button:hover{
+            background-color: rgb(236, 251, 236);
+        }
+    }
+    .gmap_canvas{
+        height: 230px;
+    }
+    .texts{
+        display: flex;
+        flex-direction: column;
+        font-family: poppins,sans-serif;
+        position: relative;
+        top: 30px;
+        left: 20px;
+        .zoomed-out{
+            font-weight: 600;
+            font-size: 25px;
+        }
+        .zoom-in{
+            color: gray;
+            font-size: 16px;
+        }
+        .links{
+            position: relative;
+            top: 40px;
+            color: darkgreen;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+    }
+}
+
+@media screen and (min-width: 769px){
+    .header-lists-desktop{
+        display: block;
+        display: flex;
+        gap: 20px;
+        list-style: none;
+        li{
+            a{
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+    .header-buttons-desktop{
+        display: block;
+        position: relative;
+        right: 20px;
+    }
+    .header-bar-desktop-left{
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+    .header-bar{
+        height: 90px;
+        width: 100%;
+    }
+    .first-green-icon-img{
+        height: 50px;
+        width: 50px;
+    }
+    #header-button-find-a-store{
+        position: relative;
+        left: -15px;
+    }
+    .fa-location-dot{
+        position: relative;
+        left: -10px;
+    }
+    .hoveryellow:hover{
+        color: green;
+    }
+    .hamburger{
+        display: none;
+    }
+    .mapdesktop{
+        display: block;
+    }
+    .common{
+        .common{
+            height: 100vh;
+        }
+        display: flex;
+        margin-left: 40px;
+        height: 1000px;
+        .without-map{
+            width: 40%;
+            position: relative;
+            top: 25px;
+            .before-map{
+                display: flex;
+                .input-and-icon{
+                    width: 100%;
+                    .input-and-iconn{
+                        input{
+                            width: 63%;
+                            border-color: transparent;
+                        }
+                        input:focus{
+                            outline-color: transparent;
+                        }
+                        .icon{
+                            z-index: 1;
+                            font-size: 20px;
+                            position: relative;
+                            color: gray;
+                        }
+                        ::placeholder{
+                            font-size: 19px;
+                        }
+                    }
+                    .line{
+                        width: 75%;
+                        height: 1px;
+                        background-color: black;
+                        position: relative;
+                    }
+                }
+                .filter-button{
+                    height: 35px;
+                    width: 90px;
+                    border-radius: 25px;
+                    border: 1px solid darkgreen;
+                    color: green;
+                    font-size: 17px;
+                    background-color: white;
+                    position: relative;
+                    right: 40px;
+                    bottom: 9px;
+                }
+                .filter-button:hover{
+                    background-color: rgb(236, 251, 236);
+                }
+            }
+            .texts{
+                font-family: poppins,sans-serif;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                top: 40px;
+                gap: 20px;
+                .zoomed-out{
+                    font-weight: 600;
+                    font-size: 28px;
+                }
+                .zoom-in{
+                    color: gray;
+                }
+                .links{
+                    position: relative;
+                    top: 190px;
+                    display: flex;
+                    flex-direction: column;
+                    color: green;
+                    gap: 20px;
+                }
+                
+            }
+        }
+        .mapdesktop{
+            width: 60%;
+            .gmap_canvas{
+                height: 100%;
+            }
+        }
+    }
+}

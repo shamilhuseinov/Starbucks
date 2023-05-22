@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/css/findAStore/findAStore.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="header-bar">
+            <div class="header-bar-desktop-left">
+                <div class="first-green-icon"><img class="first-green-icon-img" src="images/first-green-icon.jpeg"></div>
+                <div class="header-lists-desktop">
+                    <li><a href="menu.html" class="hoveryellow">Menu</a></li>
+                    <li><a href="rewards.html" class="hoveryellow">Rewards</a></li>
+                    <li><a href="giftCards.html" class="hoveryellow ">Gift Cards</a></li>
+                </div>
+            </div>
+            <div class="header-buttons-desktop">
+                <a href="findAStore.html"><button class="hovergreenLocation" id="header-button-find-a-store"><i class="fa-sharp fa-solid fa-location-dot"></i><span>Find a store</span></button></a>
+                <a href="signIn.html"><button id="header-button-sign-in">Sign in </button></a>
+                <a href="joinNow.html"><button id="header-button-join-now">Join now</button></a>
+            </div>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+          <nav class="menu">
+            <ul class="header-ul">
+                <div class="header-lists">
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="rewards.html">Rewards</a></li>
+                    <li><a href="giftCards.html">Gift Cards</a></li>
+                </div>
+                <hr>
+                <div class="header-buttons">
+                    <div>
+                        <a href="signIn.html"><button id="header-button-sign-in">Sign in</button></a>
+                        <a href="joinNow.html"><button id="header-button-join-now">Join now</button></a>
+                    </div>
+                    <div>
+                        <a href="findAStore.html" class="location-link-class"><button class="hovergreenLocation location-2-header" id="header-button-find-a-store"><i class="fa-sharp fa-solid fa-location-dot"></i><span>Find a store</span></button></a>
+                    </div>
+                </div>
+            </ul>
+          </nav>
+    </header>
+    <div class="common">
+        <div class="without-map">
+            <div class="before-map">
+                <div class="input-and-icon">
+                    <div class="input-and-iconn">
+                        <input placeholder="Find a store">
+                        <i class="fa-solid fa-magnifying-glass icon"></i>            
+                    </div>
+                    <div class="line"></div>
+                    </div>
+                <button class="filter-button">Filter</button>
+            </div>
+            <div class="mapouter mapmobile"><div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=United States&t=&z=6&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2yu.co"></a><br><style>.mapouter{position:relative;text-align:right;height:100%;width:100%;}</style><a href="https://embedgooglemap.2yu.co/"></a><style>.gmap_canvas {overflow:hidden;background:none!important;}</style></div></div>
+            <div class="texts"> 
+                <span class="zoomed-out">Zoomed out too far</span>
+                <span class="zoom-in">Zoom in to see results</span>
+                <div class="links">
+                    <a>Privacy Notice</a>
+                    <a>Terms of Use</a>
+                    <a>Do Not Share My Personal Information</a>
+                </div>
+            </div>
+        </div>
+        <div class="mapouter mapdesktop"><div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=United States&t=&z=6&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2yu.co"></a><br><style>.mapouter{position:relative;text-align:right;height:100%;width:100%;}</style><a href="https://embedgooglemap.2yu.co/"></a><style>.gmap_canvas {overflow:hidden;background:none!important;}</style></div></div>
+    </div>  
+</body>
+<script src="findAStore.js"></script>
+</html>

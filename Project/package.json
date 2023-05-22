@@ -1,0 +1,21 @@
+{
+  "name": "scss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss:compile:findAStore": "node-sass styles/scss/findAStore -o styles/css/findAStore --output-style -w",
+    "scss:compile:giftCards": "node-sass styles/scss/giftCards -o styles/css/giftCards --output-style -w",
+    "scss:compile:main": "node-sass styles/scss/main -o styles/css/main --output-style -w",
+    "scss:compile:menu": "node-sass styles/scss/menu -o styles/css/menu --output-style -w",
+    "scss:compile:rewards": "node-sass styles/scss/rewards -o styles/css/rewards --output-style -w",
+    "scss:compile:signIn": "node-sass styles/scss/signIn -o styles/css/signIn --output-style -w",
+    "scss:compile:commons": "node-sass styles/scss/commons -o styles/css/commons --output-style -w",
+    "scss:compile:joinNow": "node-sass styles/scss/joinNow -o styles/css/joinNow --output-style -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  }
+}

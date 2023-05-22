@@ -1,0 +1,649 @@
+@font-face {
+    font-family: poppins;
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+  }
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.hovergreenLocation:hover{
+    color: green;
+}
+
+header nav{
+    display: none;
+}
+
+.first-green-icon-img{
+    position: relative;
+    left: 20px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.header-bar{
+    box-sizing: border-box;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+#header-button-sign-in{
+    border: 1px solid black;
+    border-radius: 25px;
+    height: 35px;
+    width: 90px;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+#header-button-join-now{
+    border: 1px solid black;
+    border-radius: 25px;
+    height: 35px;
+    width: 90px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+}
+
+#header-button-find-a-store{
+    border-color: transparent;
+    background-color: transparent;
+    font-size: 20px;
+
+}
+
+.header-lists-desktop{
+    display: none;
+    font-weight: bold;
+    display: flex;
+    gap: 25px;
+}
+
+.header-buttons-desktop{
+    display: none;
+}
+
+.menu {
+    display: none;
+    min-width: 450px;
+    height: 100vh;
+    z-index: 2;
+    background-color: white;
+  }
+
+hr{
+    display: none;
+}
+
+.bestest-mom{
+    background-color: #FC94AF;
+    font-family: 'poppins';
+    width: 100%;
+    span{
+        font-size: 28px;
+        position: relative;
+        font-weight: 500;
+    }
+    p{
+        font-size: 20px;
+        position: relative;
+        left: 20px;
+        padding-right: 40px;
+        font-family: poppins;
+        text-align: center;
+    }
+    button{
+        font-weight: bold;
+        font-size: 14px;
+        width: 130px;
+        height: 35px;
+        border-radius: 25px;
+        border: 1px solid black;
+        background-color: transparent;
+        color: black;
+        &:hover{
+            background-color: #F2B8C6;
+        }
+    }
+}
+
+.enjoy-mint{
+    background-color: #708238;
+    font-family: 'poppins';
+    width: 100%;
+    span{
+        font-size: 28px;
+        position: relative;
+        font-weight: 500;
+    }
+    p{
+        font-size: 20px;
+        position: relative;
+        left: 20px;
+        padding-right: 40px;
+        font-family: poppins;
+        text-align: center;
+    }
+    button{
+        font-size: 14px;
+        width: 100px;
+        height: 35px;
+        border-radius: 25px;
+        border: 1px solid black;
+        background-color: transparent;
+        color: black;
+        font-weight: bold;
+        &:hover{
+            background-color: #8a9a5b;
+        }
+    }
+}
+
+.macadamia{
+    background-color: #B2C248;
+    font-family: 'poppins';
+    width: 100%;
+    span{
+        font-size: 28px;
+        position: relative;
+        font-weight: 500;
+    }
+    p{
+        font-size: 20px;
+        position: relative;
+        left: 20px;
+        padding-right: 40px;
+        font-family: poppins;
+        text-align: center;
+    }
+    button{
+        font-size: 14px;
+        width: 100px;
+        height: 35px;
+        border-radius: 25px;
+        border: 1px solid black;
+        background-color: transparent;
+        color: black;
+        font-weight: bold;
+        &:hover{
+            background-color: #9cb071;
+        }
+    }
+}
+
+.sweetest{
+    background-color: #FFFF00;
+    font-family: 'poppins';
+    width: 100%;
+    span{
+        font-size: 28px;
+        position: relative;
+        font-weight: 500;
+    }
+    p{
+        font-size: 20px;
+        position: relative;
+        left: 20px;
+        padding-right: 40px;
+        font-family: poppins;
+        text-align: center;
+    }
+    button{
+        font-size: 14px;
+        width: 100px;
+        height: 35px;
+        border-radius: 25px;
+        border: 1px solid black;
+        background-color: transparent;
+        color: black;
+        font-weight: bold;
+        &:hover{
+            background-color: #e4d00a;
+        }
+    }
+}
+
+.delivered{
+    background-color: #c2c5aa;
+    font-family: 'poppins';
+    width: 100%;
+    span{
+        font-size: 28px;
+        position: relative;
+        font-weight: 500;
+    }
+    p{
+        font-size: 20px;
+        position: relative;
+        left: 20px;
+        padding-right: 40px;
+        font-family: poppins;
+        text-align: center;
+    }
+    button{
+        font-size: 14px;
+        width: 100px;
+        height: 35px;
+        border-radius: 25px;
+        border: 1px solid black;
+        background-color: transparent;
+        color: black;
+        font-weight: bold;
+        &:hover{
+            background-color: #a4ac86;
+        }
+    }
+}
+
+.beforeFooterText{
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top: 35px;
+} 
+
+.accordion-body{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    p{
+        color: gray;
+    }
+
+    p:hover{
+        color: black;
+    }
+}
+
+.icons{
+    position: relative;
+    left: 20px;
+    top: 35px;
+    font-size: 30px;
+    display: flex;
+    gap: 15px;
+}
+
+.after-icons{
+    display: flex;
+    position: relative;
+    font-family: poppins, sans-serif;
+    p:hover{
+        text-decoration: underline;
+    }
+}
+
+.last-sentence{
+    position: relative;
+    top: 75px;
+    left: 20px;
+    p{
+        color: gray;
+        font-family: poppins, sans-serif;
+        font-size: 13px;
+    }
+    div{
+        height: 30px;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .location-link-class span{
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .location-link-class{
+        text-decoration: none;
+    }
+    .location-2-header{
+        display: flex;
+        gap: 10px;
+    }
+    hr{
+        color: lightgray;
+        min-width: 367px;
+        display: block;
+    }
+    .header-buttons{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        position: relative;
+        top: 20px;
+        left: 30px;
+    }
+    .hamburger {
+        position: relative;
+        right: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+        margin: 10px;
+      } 
+      .bar {
+        width: 30px;
+        height: 3px;
+        background-color: gray;
+        margin: 2px 0;
+        border-radius: 5px;
+      }
+      .menu.active {
+        display: block;
+        position: absolute;
+        top:100px;
+      }
+      .menu ul {
+        list-style: none;
+        padding: 0;
+      }
+      .menu ul li {
+        margin-bottom: 10px;
+        position: relative;
+        left: 40px;
+      }
+      .menu ul li a {
+        text-decoration: none;
+        color: #000;
+        font-size: 20px;
+      }
+      .header-lists{
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+      }
+      .header-lists-desktop{
+        display: none;
+      }
+      .hovercolorgray:hover{
+        background-color: gray;
+    }
+    #mothers-day{
+        width: 100%;
+        position: relative;
+        top: 30px;
+    }
+
+    .bestest-mom{
+        position: relative;
+        top: 25px;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    #first-cyan-picture{
+        width: 100%;
+        position: relative;
+        top: 30px;
+    }
+
+    .enjoy-mint{
+        position: relative;
+        top: 25px;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    #green-picture{
+        width: 100%;
+        position: relative;
+        top: 30px;
+    }
+
+    .macadamia{
+        position: relative;
+        top: 25px;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    #yellow-picture{
+        width: 100%;
+        position: relative;
+        top: 30px;
+    }
+
+    .sweetest{
+        position: relative;
+        top: 25px;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    #cyan-2-pictures{
+        width: 100%;
+        position: relative;
+        top: 30px;
+    }
+
+    .delivered{
+        position: relative;
+        top: 25px;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .after-icons{
+        flex-direction: column;
+        font-size: 14px;
+        top: 65px;
+        left: 20px;
+        gap: 12px;
+    }
+}
+
+@media screen and (min-width: 769px){
+    .header-lists-desktop{
+        display: block;
+        display: flex;
+        gap: 20px;
+        list-style: none;
+        li{
+            a{
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+    .header-buttons-desktop{
+        display: block;
+        position: relative;
+        right: 20px;
+    }
+    .header-bar-desktop-left{
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+    .header-bar{
+        height: 70px;
+        width: 100%;
+        border-bottom: 1px solid lightgray;
+        padding-bottom: 15px;
+        margin-bottom: 30px;
+    }
+    .first-green-icon-img{
+        height: 50px;
+        width: 50px;
+    }
+    #header-button-find-a-store{
+        position: relative;
+        left: -15px;
+    }
+    .fa-location-dot{
+        position: relative;
+        left: -10px;
+    }
+    .hoveryellow:hover{
+        color: green;
+    }
+    .hamburger{
+        display: none;
+    }
+    .pink-parts{
+        min-height: 350px;
+        display: flex;
+        flex-direction: row-reverse;
+        .mothersDay{
+            width: 50%;
+            #mothers-day{
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        .bestest-mom{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .cyan1-parts{
+        display: flex;
+        min-height: 350px;
+        .first-cyan-picture{
+            width: 50%;
+            #first-cyan-picture{
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        .enjoy-mint{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .green-parts{
+        min-height: 350px;
+        display: flex;
+        flex-direction: row-reverse;
+        .green-picture{
+            width: 50%;
+            #green-picture{
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        .macadamia{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .yellow-parts{
+        display: flex;
+        min-height: 350px;
+        .yellow-picture{
+            width: 50%;
+            #yellow-picture{
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        .sweetest{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .cyan2-parts{
+        min-height: 250px;
+        display: flex;
+        flex-direction: row-reverse;
+        .cyan-2-pictures{
+            width: 50%;
+            #cyan-2-pictures{
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        .delivered{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .accordion{
+        button{
+            font-size: 20px;
+            position: relative;
+        }
+        font-size: 17px;
+    }
+
+    .after-icons{
+        font-size: 16px;
+        gap: 20px;
+        top: 65px;
+        left: 20px;
+        p{
+            border-right:2px solid black;
+            padding-right:18px;
+        }
+
+        #last-p{
+            border-color: transparent;
+        }
+    }
+
+    .last-sentence{
+        p{
+            font-size: 15px;
+        }
+    }
+}
